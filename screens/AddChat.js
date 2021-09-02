@@ -26,7 +26,7 @@ const AddChat = ({navigation}) => {
             <Input placeholder='Enter a Chat Name' value={input} onChangeText={text => setInput(text)} leftIcon = {
                 <Icon name='wechat' type='antdesign' size={24} color='black'/>
             }/>
-            <Button onPress={createChat} title='Create New Chat'/>
+            <Button disabled={!input} onPress={createChat} title='Create New Chat'/>
         </View>
     )
 }
